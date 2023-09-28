@@ -7,7 +7,7 @@
 
   --white-color: #fff;
   --dark-color: #222;
-  --body-bg-color: #fff;
+  --body-bg-color: #0a6e03;
   --section-bg-color: #202834;
   --navigation-item-hover-color: #3b5378;
 
@@ -137,7 +137,7 @@ header .nav-bar {
 
   position: absolute;
   top: 25%;
-  color: black;
+  color:#dcfce7;
   margin: 0 180px;
   transition: 0.3s ease;
 }
