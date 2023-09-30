@@ -42,16 +42,12 @@ body {
 /* =======Header========= */
 header {
 
-  z-index: 999;
-  position: fixed;
+  z-index: 1;
   width: 100%;
   height: calc(5rem + 1rem);
-  top: 0;
-  left: 0;
   display: flex;
   justify-content: center;
   transition: 0.5s ease;
-  transition-property: height,background;
 }
 
 header .wrapper{
@@ -68,7 +64,7 @@ header.sticky{
 }
 header .nav-bar {
 
-  position: relative;
+  position:relative;
   width: 100%;
   display: flex;
   align-items: center;
