@@ -44,15 +44,17 @@
   <!-- !navigation Bar -->
   <header>
     <div class="nav-bar">
-      <a href="" class="logo">Fashion Treak Garments</a>
+      <a href="" class="logo">
+        <ion-icon name="bus-outline" class="logo"></ion-icon>
+        SeatGuru</a>
       <div class="navigation">
         <div class="nav-items">
           <a href="../Landing/Landing.html"> Home</a>
           <a href="./ContactUs.html"> Contact Us</a>
           <a href="./about us/aboutUs.html"> About Us</a>
           <!-- make this button blue ane make it red when hover -->
-          <a href="../Login Register Page/index.html"><button type="button" class="btn btn-dark btnlogin">Login</button></a>
-
+          <a href="../Login Register Page/index.html"><button type="button"
+              class="btn btn-dark btnlogin">Login</button></a>
         </div>
       </div>
     </div>
@@ -63,7 +65,444 @@
 
 
   <main>
+    <div class="form_container">
+      <form class="search-form needs-validation" autocomplete="off" action="dashboard" method="POST" novalidate="">
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="fromstation">From</label>
+            <select id="fromstation" name="fromSt" class="form-control select2-hidden-accessible" required=""
+              data-select2-id="fromstation" tabindex="-1" aria-hidden="true">
+              <option selected="" value="" data-select2-id="2">Choose Station</option>
 
+              <option value="51">Ahangama</option>
+
+              <option value="43">Aluthgama</option>
+
+              <option value="45">Ambalangoda</option>
+
+              <option value="82">Ambalangoda</option>
+
+              <option value="24">Ambewela</option>
+
+              <option value="8">Anuradhapura</option>
+
+              <option value="12">Anuradhapura Town</option>
+
+              <option value="97">Avissawella</option>
+
+              <option value="16">Badulla</option>
+
+              <option value="26">Bandarawela</option>
+
+              <option value="30">Batticaloa</option>
+
+              <option value="89">Beliatta</option>
+
+              <option value="44">Bentota</option>
+
+              <option value="42">Beruwala</option>
+
+              <option value="68">China bay</option>
+
+              <option value="75">Chunnakam</option>
+
+              <option value="1">Colombo Fort</option>
+
+              <option value="92">Demodara-Ella</option>
+
+              <option value="25">Diyathalawa</option>
+
+              <option value="57">Ella</option>
+
+              <option value="36">Eraur</option>
+
+              <option value="14">Galgamuwa</option>
+
+              <option value="47">Galle</option>
+
+              <option value="28">Galoya</option>
+
+              <option value="2">Gampaha</option>
+
+              <option value="21">Gampola</option>
+
+              <option value="49">Habaraduwa</option>
+
+              <option value="90">Habarana</option>
+
+              <option value="58">Hali Ela</option>
+
+              <option value="56">Haputhale</option>
+
+              <option value="23">Hatton</option>
+
+              <option value="46">Hikkaduwa</option>
+
+              <option value="33">Hingurakgoda</option>
+
+              <option value="72">Jaffna</option>
+
+              <option value="91">Kakirawa</option>
+
+              <option value="41">Kalutara South</option>
+
+              <option value="54">Kamburugamuwa</option>
+
+              <option value="4">Kandy</option>
+
+              <option value="73">Kankesanthurai</option>
+
+              <option value="31">Kanthale</option>
+
+              <option value="59">Kilinochchi</option>
+
+              <option value="71">Kodikamam</option>
+
+              <option value="50">Koggala</option>
+
+              <option value="6">Kurunegala</option>
+
+              <option value="77">Madhupara</option>
+
+              <option value="7">Mahawa</option>
+
+              <option value="88">Makumbura</option>
+
+              <option value="84">Mannar</option>
+
+              <option value="13">Maradhana</option>
+
+              <option value="81">Matale</option>
+
+              <option value="55">Matara</option>
+
+              <option value="9">Medawachchiya</option>
+
+              <option value="94">Mirigama</option>
+
+              <option value="53">Mirissa</option>
+
+              <option value="38">Moratuwa</option>
+
+              <option value="70">Mount Lavinia</option>
+
+              <option value="95">NAGOLLAGAMA</option>
+
+              <option value="15">Nanu Oya</option>
+
+              <option value="64">Nawalapitiya</option>
+
+              <option value="22">Nawalapitya</option>
+
+              <option value="100">Nugegoda</option>
+
+              <option value="17">Omantha</option>
+
+              <option value="66">Pallai</option>
+
+              <option value="39">Panadura</option>
+
+              <option value="3">Peradeniya</option>
+
+              <option value="5">Polgahawela</option>
+
+              <option value="29">Polonnaruwa</option>
+
+              <option value="99">Puwakpitiya</option>
+
+              <option value="18">Ragama</option>
+
+              <option value="20">Rambukkana</option>
+
+              <option value="37">Rathmalana</option>
+
+              <option value="96">Return Colombo </option>
+
+              <option value="98">Return Waga</option>
+
+              <option value="78">Talaimannar Pier</option>
+
+              <option value="67">Thambalagamuwa</option>
+
+              <option value="76">Thambuththegama</option>
+
+              <option value="11">Thandikulam</option>
+
+              <option value="69">Trincomalee</option>
+
+              <option value="48">Unawatuna</option>
+
+              <option value="35">Valachchena</option>
+
+              <option value="10">Vauniya</option>
+
+              <option value="19">Veyangoda</option>
+
+              <option value="83">Veyangoda </option>
+
+              <option value="40">Waduwwa</option>
+
+              <option value="52">Weligama</option>
+
+              <option value="34">Welikanda</option>
+
+              <option value="93">Wellawa</option>
+
+              <option value="65">Wellawatte</option>
+
+            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1"
+              style="width: 229.328px;"><span class="selection"><span
+                  class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true"
+                  aria-expanded="false" tabindex="0" aria-disabled="false"
+                  aria-labelledby="select2-fromstation-container"><span class="select2-selection__rendered"
+                    id="select2-fromstation-container" role="textbox" aria-readonly="true"
+                    title="Choose Station"></span><span class="select2-selection__arrow" role="presentation"><b
+                      role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+                aria-hidden="true"></span></span>
+            <div class="invalid-feedback">
+              Please select from station
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="tostation">To</label>
+            <select id="tostation" name="toSt" class="form-control select2-hidden-accessible" required=""
+              data-select2-id="tostation" tabindex="-1" aria-hidden="true">
+              <option selected="" value="" data-select2-id="4">Choose Station</option>
+
+              <option value="51">Ahangama</option>
+
+              <option value="43">Aluthgama</option>
+
+              <option value="45">Ambalangoda</option>
+
+              <option value="82">Ambalangoda</option>
+
+              <option value="24">Ambewela</option>
+
+              <option value="8">Anuradhapura</option>
+
+              <option value="12">Anuradhapura Town</option>
+
+              <option value="97">Avissawella</option>
+
+              <option value="16">Badulla</option>
+
+              <option value="26">Bandarawela</option>
+
+              <option value="30">Batticaloa</option>
+
+              <option value="89">Beliatta</option>
+
+              <option value="44">Bentota</option>
+
+              <option value="42">Beruwala</option>
+
+              <option value="68">China bay</option>
+
+              <option value="75">Chunnakam</option>
+
+              <option value="1">Colombo Fort</option>
+
+              <option value="92">Demodara-Ella</option>
+
+              <option value="25">Diyathalawa</option>
+
+              <option value="57">Ella</option>
+
+              <option value="36">Eraur</option>
+
+              <option value="14">Galgamuwa</option>
+
+              <option value="47">Galle</option>
+
+              <option value="28">Galoya</option>
+
+              <option value="2">Gampaha</option>
+
+              <option value="21">Gampola</option>
+
+              <option value="49">Habaraduwa</option>
+
+              <option value="90">Habarana</option>
+
+              <option value="58">Hali Ela</option>
+
+              <option value="56">Haputhale</option>
+
+              <option value="23">Hatton</option>
+
+              <option value="46">Hikkaduwa</option>
+
+              <option value="33">Hingurakgoda</option>
+
+              <option value="72">Jaffna</option>
+
+              <option value="91">Kakirawa</option>
+
+              <option value="41">Kalutara South</option>
+
+              <option value="54">Kamburugamuwa</option>
+
+              <option value="4">Kandy</option>
+
+              <option value="73">Kankesanthurai</option>
+
+              <option value="31">Kanthale</option>
+
+              <option value="59">Kilinochchi</option>
+
+              <option value="71">Kodikamam</option>
+
+              <option value="50">Koggala</option>
+
+              <option value="6">Kurunegala</option>
+
+              <option value="77">Madhupara</option>
+
+              <option value="7">Mahawa</option>
+
+              <option value="88">Makumbura</option>
+
+              <option value="84">Mannar</option>
+
+              <option value="13">Maradhana</option>
+
+              <option value="81">Matale</option>
+
+              <option value="55">Matara</option>
+
+              <option value="9">Medawachchiya</option>
+
+              <option value="94">Mirigama</option>
+
+              <option value="53">Mirissa</option>
+
+              <option value="38">Moratuwa</option>
+
+              <option value="70">Mount Lavinia</option>
+
+              <option value="95">NAGOLLAGAMA</option>
+
+              <option value="15">Nanu Oya</option>
+
+              <option value="64">Nawalapitiya</option>
+
+              <option value="22">Nawalapitya</option>
+
+              <option value="100">Nugegoda</option>
+
+              <option value="17">Omantha</option>
+
+              <option value="66">Pallai</option>
+
+              <option value="39">Panadura</option>
+
+              <option value="3">Peradeniya</option>
+
+              <option value="5">Polgahawela</option>
+
+              <option value="29">Polonnaruwa</option>
+
+              <option value="99">Puwakpitiya</option>
+
+              <option value="18">Ragama</option>
+
+              <option value="20">Rambukkana</option>
+
+              <option value="37">Rathmalana</option>
+
+              <option value="96">Return Colombo </option>
+
+              <option value="98">Return Waga</option>
+
+              <option value="78">Talaimannar Pier</option>
+
+              <option value="67">Thambalagamuwa</option>
+
+              <option value="76">Thambuththegama</option>
+
+              <option value="11">Thandikulam</option>
+
+              <option value="69">Trincomalee</option>
+
+              <option value="48">Unawatuna</option>
+
+              <option value="35">Valachchena</option>
+
+              <option value="10">Vauniya</option>
+
+              <option value="19">Veyangoda</option>
+
+              <option value="83">Veyangoda </option>
+
+              <option value="40">Waduwwa</option>
+
+              <option value="52">Weligama</option>
+
+              <option value="34">Welikanda</option>
+
+              <option value="93">Wellawa</option>
+
+              <option value="65">Wellawatte</option>
+
+            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="3"
+              style="width: 229.328px;"><span class="selection"><span
+                  class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true"
+                  aria-expanded="false" tabindex="0" aria-disabled="false"
+                  aria-labelledby="select2-tostation-container"><span class="select2-selection__rendered"
+                    id="select2-tostation-container" role="textbox" aria-readonly="true"
+                    title="Choose Station"></span><span class="select2-selection__arrow" role="presentation"><b
+                      role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+                aria-hidden="true"></span></span>
+
+            <div class="invalid-feedback">
+              Please select to station
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="dateOne">Date</label>
+            <div role="wrapper" class="gj-datepicker gj-datepicker-bootstrap gj-unselectable input-group"><input
+                type="text" name="depDate" class="form-control" id="dateOne" onchange="setReturnDate(this.value);"
+                placeholder="Date" required="" data-type="datepicker" data-guid="bed8a77b-8978-9bf6-b18c-bd3617b7e476"
+                data-datepicker="true" role="input"><span class="input-group-append" role="right-icon"><button
+                  class="btn btn-outline-secondary border-left-0" type="button"><i class="fa fa-calendar"
+                    aria-hidden="true"></i></button></span></div>
+          </div>
+        </div>
+        <div class="form-row margin-bottom-search">
+          <div class="form-group col-md-4">
+            <input type="number" min="1" max="5" name="noOfUsers" class="form-control" id="passengers"
+              placeholder="No of Passengers" required="">
+            <div class="invalid-feedback">
+              No of passengers between 1-5
+            </div>
+          </div>
+          <div class="form-group col-lg-4 col-md-6 margin-top-search">
+            <label>Return</label>
+            <div class="form-check">
+              <input type="checkbox" id="toggle" class="checkbox" />
+              <label for="toggle" class="switch"></label>
+            </div>
+          </div>
+          <div class="form-group col-lg-4" id="pickReturn">
+            <!-- <label for="dateOne">Return Date</label> -->
+            <div role="wrapper" class="gj-datepicker gj-datepicker-bootstrap gj-unselectable input-group"><input
+                type="text" name="retDate" class="form-control" id="dateRet" placeholder="Pick Return Date"
+                data-type="datepicker" data-guid="96d56089-4aeb-2b85-66b5-c6f3e4b76bd6" data-datepicker="true"
+                role="input"><span class="input-group-append" role="right-icon"><button
+                  class="btn btn-outline-secondary border-left-0" type="button"><i class="fa fa-calendar"
+                    aria-hidden="true"></i></button></span></div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary reset-btn" onclick="resetSearch()" style="margin:5px;">
+          Reset</button>
+        <button type="submit" class="btn btn-primary search-btn" style="margin:5px;">Search</button>
+
+
+      </form>
+    </div>
+
+    </div>
 
 
 
@@ -115,35 +554,30 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <script>
-
-    // !swiper js starts here
-
-    var swiper = new Swiper(".bg-slider-thumbs", {
-      loop: true,
-      spaceBetween: 0,
-      slidesPerView: 0,
-    });
-    var swiper2 = new Swiper(".bg-slider", {
-      loop: true,
-      spaceBetween: 0,
-      thumbs: {
-        swiper: swiper,
-      },
-    });
-
-    //make slider auto slide within 3s
-    swiper2.autoplay.start();
-
-
-    // !swiper js ends here
-  </script>
-
-
 </body>
+
+<script>
+
+  let checkbox = document.getElementById('toggle');
+  let pickReturn = document.getElementById('pickReturn');
+
+  checkbox.addEventListener('change', function () {
+    if (this.checked) {
+      pickReturn.style.display = "block";
+    } else {
+      pickReturn.style.display = "none";
+    }
+  });
+
+
+
+</script>
+
 <!-- !Swiper JS -->
 <script src="js/swiper-bundle.min.js"></script>
 <!-- !JavaScript -->
 <script src="./JS/feedback.js"></script>
+
+
 
 </html>
