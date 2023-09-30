@@ -75,7 +75,7 @@ header .nav-bar {
   justify-content: space-between;
   padding: 0 200px;
   transition: 0.3s ease;
-  background-color: #ffffff49;
+  background-color:#052e16;
   backdrop-filter: blur(20px);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -83,7 +83,7 @@ header .nav-bar {
 
 .nav-bar .logo {
 
-  color: var(--dark-color);
+  color: var(--white-color);
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -94,7 +94,7 @@ header .nav-bar {
 
 .navigation .nav-items a {
 
-  color: var(--dark-color);
+  color: var(--white-color);
   font-size: 1rem;
   text-decoration: none;
   text-shadow: var(--text-shadow);
