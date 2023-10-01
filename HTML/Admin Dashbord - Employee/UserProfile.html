@@ -90,19 +90,17 @@
 
             <div class="card-body">
                 <form class="main-form">
-                    <div class="buttons_edit_delete">
-                    
-                        <a href="./editProfile.html">
-                            <button class="btn btn-icon btn-3 btn-primary edit" type="button">
+                    <div class="buttons_edit_delete" id="btnSet1">
+                            <button id="editBtn" class="btn btn-icon btn-3 btn-primary edit" type="button">
                                 <span class="btn-inner--icon">
                                     <!-- add edit icon -->
                                     <ion-icon name="create-outline"></ion-icon>
                                 </span>
                                 <span class="btn-inner--text">Edit</span>
                             </button>
-                        </a>
                         
-                        <button class="btn btn-icon btn-3 btn-danger delete" type="button">
+                        
+                        <button class="btn btn-icon btn-3 btn-danger delete" type="button" id="delete">
                             <span class="btn-inner--icon">
                                 <!-- add remove icon -->
                                 <ion-icon name="trash-outline"></ion-icon>
@@ -183,9 +181,9 @@
                       <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ..." disabled>A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea>
                     </div>
                   </div>
-                  <div class="save">
-                    <button type="button" class="btn btn-success mt-4 savebtn">Save</button>
-                    <button type="button" class="btn btn-danger mt-4 Cancel">Cancel</button>
+                  <div class="save" id="btnSet2">
+                    <button type="submit" class="btn btn-success mt-4 savebtn" id="save">Save</button>
+                    <button type="button" class="btn btn-danger mt-4 Cancel" id="Cancel">Cancel</button>
                   </div>
                 </form>
 
@@ -196,8 +194,8 @@
                         Are you sure?
                     </div>
                     <div class="buttons">
-                        <button class="no">No</button>
-                        <button class="yes">Yes</button>
+                        <button class="no" id="No">No</button>
+                        <button class="yes" id="yes">Yes</button>
                     </div>
                 </div>
             </div>

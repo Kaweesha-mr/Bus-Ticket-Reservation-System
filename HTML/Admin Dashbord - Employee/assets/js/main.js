@@ -21,7 +21,46 @@ toggle.onclick = function () {
 };
 
 
-let buttonSet = document.querySelector(".buttons_edit_delete");
-let editBtn = document.querySelector(".edit");
-let deleteBtn = document.querySelector(".delete");
-let saveBtnSet = document.querySelector(".save");
+let buttonSet = document.getElementById("btnSet1");
+let editBtn = document.getElementById("editBtn");
+let deleteBtn = document.getElementById("delete");
+let saveBtnSet = document.getElementById("btnSet2");
+let saveBtn = document.getElementById("save");
+let cancelBtn = document.getElementById("Cancel");
+let popup = document.getElementsByClassName("popup");
+let Allinput = document.getElementsByClassName("form-control");
+let background = document.getElementsByClassName("main-form");
+let cancel = document.getElementById("No");
+
+editBtn.onclick = function () {
+  buttonSet.style.display = "none";
+  saveBtnSet.style.display = "flex";
+  //remove disabled attribute from all input
+  for (let i = 0; i < Allinput.length; i++) {
+    Allinput[i].removeAttribute("disabled")
+  }
+}
+
+cancelBtn.onclick = function () {
+  buttonSet.style.display = "flex";
+  saveBtnSet.style.display = "none";
+  //add disabled attribute to all input
+  for (let i = 0; i < Allinput.length; i++) {
+    Allinput[i].setAttribute("disabled", "disabled")
+  }
+  window.scrollTo(0, 0);
+
+}
+
+
+deleteBtn.onclick = function () {
+  //add filter blur to background
+  background[0].style.filter = "blur(5px)";
+  popup[0].style.display = "flex";
+}
+
+cancel.onclick = function () {
+  background[0].style.filter = "blur(0px)";
+  popup[0].style.display = "none";
+}
+
