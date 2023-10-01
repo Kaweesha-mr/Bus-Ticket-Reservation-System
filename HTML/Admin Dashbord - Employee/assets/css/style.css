@@ -468,3 +468,22 @@ body {
     left: initial;
   }
 }
+
+.save{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.savebtn:hover{
+  background-color: #06b64f;
+  color: white;
+}
+
+.Cancel:hover{
+  background-color: #ae001a;
+  color: white;
+}

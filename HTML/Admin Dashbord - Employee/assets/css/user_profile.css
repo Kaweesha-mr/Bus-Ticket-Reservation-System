@@ -1812,3 +1812,12 @@
   .navbar-search-dark .focused .input-group {
     border-color: rgba(255, 255, 255, .9);
   }
+  }
+}
+.buttons_edit_delete {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20rem;
+}
