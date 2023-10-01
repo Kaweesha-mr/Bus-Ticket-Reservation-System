@@ -19,3 +19,9 @@ toggle.onclick = function () {
   navigation.classList.toggle("active");
   main.classList.toggle("active");
 };
+
+
+let buttonSet = document.querySelector(".buttons_edit_delete");
+let editBtn = document.querySelector(".edit");
+let deleteBtn = document.querySelector(".delete");
+let saveBtnSet = document.querySelector(".save");
